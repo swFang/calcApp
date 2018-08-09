@@ -1,7 +1,11 @@
+var curNum = 0;
+var storedNum = null;
+
+
+
 //ALL CALCULATOR FUNCTIONS ARE A operator B 
 //EX. subtract(a,b) == a - b     
 //    divide(a,b)   == a / b
-
 function add(a,b){
     return (a+b);
 }
@@ -40,4 +44,25 @@ function operate(operator, operand1, operand2){
             return ans;
     }
 }
+
+function addListensers(){
+   var tmp = document.getElementsByTagName("button");
+   var arr = Array.prototype.slice.call(tmp);
+  
+   arr.forEach(function(child){
+       child.addEventListener("click", clicked);
+   })
+}
+
+
+function clicked(elem){
+    console.log("i am clicked " + this.id);
+}
+
+
+function main(){
+    addListensers();
+}
+
+main();
 
