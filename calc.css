@@ -20,7 +20,7 @@
         
     padding: 10px;
     grid-gap: 10px 10px;
-    border-radius: 5%
+    border-radius: 10px;
 }
 
 #background{
@@ -103,21 +103,21 @@
 .eq{
     height: 90px;
     width: 90px;
-    background-color: rgb(70, 70, 70); 
+    background-color: rgb(255, 180, 42); 
     grid-area: equals;
 }
 
 .dec{
     height: 90px;
     width: 90px;
-    background-color: rgb(255, 180, 42); 
+    background-color: rgb(70, 70, 70); 
     grid-area: decimal;
 }
 
 .reset{
     height: 90px;
     width: 90px;
-    background-color: rgb(255, 180, 42); 
+    background-color: rgb(209, 209, 209); 
     grid-area: AC;
 }
 
