@@ -96,10 +96,13 @@ function clicked(){
             storedNum = curNum;
             curNum = 0;
             storedOp = this.id; 
-            
-
-            console.log(curNum + " " + storedNum);
-        } 
+        } else {
+            var ans = operate(storedOp,storedNum,curNum)
+            storedNum = ans;
+            curNum = 0; 
+            storedOp = this.id;
+            updateDisplay(storedNum);
+        }
 
         prevAns = null;
        
