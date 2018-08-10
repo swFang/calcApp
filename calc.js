@@ -114,6 +114,11 @@ function clicked(){
         prevAns = null;
         updateDisplay(curNum);
     } else {
+
+        if (storedOp != null){
+            
+
+
         var ans = operate(storedOp,storedNum,curNum);
         curNum = 0;
         storedOp = null;
@@ -123,6 +128,7 @@ function clicked(){
         console.log("hit equals");
     
         updateDisplay(ans);
+        }
     }
 }
 
